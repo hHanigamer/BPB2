@@ -4,7 +4,7 @@ from splusthon.sessions import StringSession
 
 async def main():
     client = SoroushClient(StringSession())
-    await client.start(phone=+989735312075)
+    await client.start(phone=+989228238161)
     print(client.session.save())
 
 asyncio.run(main())
