@@ -7,7 +7,7 @@ SS = "1AwASaW0tc2VydmVyLnNwbHVzLmlyAbtIQpuZYMYoVkWm-4sfOTQA6cKlZDfOOd78TZrTnFNOi
 
 async def point_task(client, recipient):
     """Send dot‑messages every 60–70 seconds."""
-    ma = alaf = naz = kar = tamiz = shird = shirf = gard = kiss = gaza = bare = alafyab = 0
+    ma = alaf = naz = kar = tamiz = shird = shirf = gard = kiss = gaza = bare = alafyab = zebelgaza = 0
 
     while True:
         await asyncio.sleep(random.uniform(60, 70))
@@ -24,6 +24,7 @@ async def point_task(client, recipient):
         gaza += 1
         bare += 1
         alafyab += 1
+        zebelgaza += 1
 
         
         if ma >= 5:
@@ -62,6 +63,9 @@ async def point_task(client, recipient):
         if alafyab >= 5:
             await client.send_message(recipient, 'علف یاب بخر')
             alafyab = 0
+        if zebelgaza >= 45:
+            await client.send_message(recipient, 'غذا بز زبل')
+            zebelgaza = 0
 
 async def main():
     client = SoroushClient(StringSession(SS))
