@@ -59,7 +59,7 @@ async def point_task(client, recipient):
         if shirf >= 30:
             await client.send_message(recipient, 'فروش شیر')
             shirf = 0
-        if alafyab >= 30:
+        if alafyab >= 5:
             await client.send_message(recipient, 'علف یاب بخر')
             alafyab = 0
 
