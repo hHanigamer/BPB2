@@ -3,11 +3,11 @@ import random
 from splusthon import SoroushClient
 from splusthon.sessions import StringSession
 
-SS = "1AwASaW0tc2VydmVyLnNwbHVzLmlyAbtIQpuZYMYoVkWm-4sfOTQA6cKlZDfOOd78TZrTnFNOivlCL-2wYmYB2CMB1QE4D9_rc5NRBuOeFqV2OPsB230ceO2qNxODIqhjbNBsbuh9mJ8L5RFQs6ilz9YzJcbDYMsWhmNPY5idevRfFnporKc7qiHrOmBlbYyixIPs7w-16Rp_BJJLP_tOjwE5MY2SW8VFjNgxnceNk46ui0rfZWR0IxDIQlQrlSKPtx7CdAfwV1PcuCnWU_rnP5c6vbfoY9w4uSP8chReFDmKEPfSligkQ_MxfAXt7-I3vldko_RJ1NEIHo6CBcqHzHwO7rrZ6GF_WYt2_WlSGvp4gxCAUMoG"
+SS = "1AwASaW0tc2VydmVyLnNwbHVzLmlyAbvWa4_wnbryukawvNlz9PAL2VVIz-sr-8DFokM5hPQGaP8sbax5GwB4J3kN2iQj1s8yv6Adc3MDiWRjJCpE_H9veTdaw0z77isOIPi-RF94igMtqThLefQ1SP48xuXQpfIdcM9OU_qrHdMKlXJv6pu28uhKqyw-iflQhf3uEzWdeyrIvvCd59aFlVvOxw0aixq-nwoSuBRo91uew3uTf0iSjMK-mBg2EQZynrz09DBMccHQwQHsy7zgnLBC1Ll3psIPIGMXBkAW6g_eautp9j1xX1f8Mm5L_eQLSTBJaP23653mb_mMwMb_M8m43LApslxWws9Exds2Obm_TdSaLBB_"
 
 async def point_task(client, recipient):
     """Send dot‑messages every 60–70 seconds."""
-    ma = alaf = naz = kar = tamiz = shird = shirf = gard = kiss = gaza = bare = 0
+    ma = alaf = naz = kar = tamiz = shird = shirf = gard = kiss = gaza = bare = alafyab = 0
 
     while True:
         await asyncio.sleep(random.uniform(60, 70))
@@ -23,6 +23,7 @@ async def point_task(client, recipient):
         kiss += 1
         gaza += 1
         bare += 1
+        alafyab += 1
 
         if ma >= 5:
             await client.send_message(recipient, 'مع')
@@ -57,6 +58,9 @@ async def point_task(client, recipient):
         if shirf >= 30:
             await client.send_message(recipient, 'فروش شیر')
             shirf = 0
+        if alafyab >= 5:
+            await client.send_message(recipient, 'علف یاب بخر')
+            alafyab = 0
 
 async def main():
     client = SoroushClient(StringSession(SS))
