@@ -63,10 +63,10 @@ async def point_task(client, recipient):
         if alafyab >= 5:
             await client.send_message(recipient, 'علف یاب بخر')
             alafyab = 0
-        if legendary >= 7.5:
+        if legendary >= 15:
             await client.send_message(recipient, 'خرید علف legendary')
             legendary = 0
-        if zebelgaza >= 7.5:
+        if zebelgaza >= 15:
             await client.send_message(recipient, 'غذا بز زبل')
             zebelgaza = 0
 
