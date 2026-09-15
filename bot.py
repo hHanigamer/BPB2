@@ -7,7 +7,7 @@ SS = "1AwASaW0tc2VydmVyLnNwbHVzLmlyAbtIQpuZYMYoVkWm-4sfOTQA6cKlZDfOOd78TZrTnFNOi
 
 async def point_task(client, recipient):
     """Send dot‑messages every 60–70 seconds."""
-    ma = alaf = naz = kar = tamiz = shird = shirf = gard = kiss = gaza = bare = alafyab = zebelgaza = 0
+    ma = alaf = naz = kar = tamiz = shird = shirf = gard = kiss = gaza = bare = alafyab = zebelgaza = legendary = 0
 
     while True:
         await asyncio.sleep(random.uniform(60, 70))
@@ -25,7 +25,7 @@ async def point_task(client, recipient):
         bare += 1
         alafyab += 1
         zebelgaza += 1
-
+        legendary += 1
         
         if ma >= 5:
             await client.send_message(recipient, 'مع')
@@ -63,7 +63,10 @@ async def point_task(client, recipient):
         if alafyab >= 5:
             await client.send_message(recipient, 'علف یاب بخر')
             alafyab = 0
-        if zebelgaza >= 45:
+        if legendary >= 7.5:
+            await client.send_message(recipient, 'خرید علف legendary')
+            legendary = 0
+        if zebelgaza >= 7.5:
             await client.send_message(recipient, 'غذا بز زبل')
             zebelgaza = 0
 
